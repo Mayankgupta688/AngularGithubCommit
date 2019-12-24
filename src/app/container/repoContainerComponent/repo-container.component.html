@@ -3,5 +3,9 @@
         <repo-details [repositorydetails]="repositorydetails"></repo-details>
     </div>
 
+    <div>
+        <commit-list [commits]="commits"></commit-list>
+    </div>
+
     <h2 *ngIf="!repositorydetails" class=".col-12">Repository Details Not Available...</h2>
 </div>

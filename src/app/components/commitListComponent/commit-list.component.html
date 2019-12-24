@@ -1,0 +1,14 @@
+<div>
+    <div *ngFor="let commit of commits" class="row">
+        <div class="col-12 commit-details">
+            <div class="detail-template">
+                <img [src]="commit.avatarUrl" class="committer-url" alt="" />
+                <div class="commit-detailed-info">
+                    <p class="commit-details-fields"><strong>Committed By: </strong>{{commit.author}}</p>
+                    <p class="commit-details-fields"><strong>User Email: </strong>{{commit.email}}</p>
+                </div>
+            </div>
+            <div><strong>Commit Message: </strong>{{commit.message}}</div>
+        </div>
+    </div>
+</div>
