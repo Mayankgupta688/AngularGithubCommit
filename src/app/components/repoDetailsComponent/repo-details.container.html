@@ -1,0 +1,19 @@
+<div class="row repositorydetails-container">
+        <div *ngIf="repositorydetails" class="row repositorydetails">
+            <div class="repository-details-container col-5">
+                <img src={{repositorydetails.avatarUrl}} alt=""/>
+                <div>
+                    <strong class="repo-name col-12">{{capitalize(repositorydetails.ownerLogin) + " / " + capitalize(repositorydetails.repositoryName)}}</strong> 
+                </div>
+            </div>
+
+            <div class="col-7 repository-other-details">
+                <p><b>Supported Language: </b>{{repositorydetails.language}}</p>
+                <p><b>Total Open Issues: </b>{{repositorydetails.openIssueCount}}</p>
+                <p><b>Default Branch: </b>{{capitalize(repositorydetails.defaultBranch)}}</p>
+                <p><b>Subscriber Count: </b>{{repositorydetails.subscribersCount}}</p>
+                <p><b>Application Size: </b>{{repositorydetails.repoSize}}</p>
+                <p><b>Application Url: </b>{{repositorydetails.homePage}}</p>                    
+            </div>
+        </div>
+</div>

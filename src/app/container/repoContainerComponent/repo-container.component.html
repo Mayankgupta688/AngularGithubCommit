@@ -1,5 +1,7 @@
 <div class="container repository-details">
-
+    <div *ngIf="repositorydetails">
+        <repo-details [repositorydetails]="repositorydetails"></repo-details>
+    </div>
 
     <h2 *ngIf="!repositorydetails" class=".col-12">Repository Details Not Available...</h2>
 </div>
