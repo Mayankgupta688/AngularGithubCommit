@@ -6,7 +6,7 @@ import ApplicationDataService from "../../services/application-data.service";
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent {
+export default class AppComponent {
   repositoryDetails: RepoDetails;
 
   constructor(private appData: ApplicationDataService) { }
